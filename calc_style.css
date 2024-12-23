@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    list-style: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #bcdaef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #03eeff;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    flex: 1;
+    margin-right: 10px;
+    color: white;
+}
+
+input[type="number"],
+select {
+    outline: none;
+    border: none;
+    padding: 8px;
+    background: transparent;
+    border: 1.2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+select option{
+    background-color: #000;
+}
+
+input[type="number"]::placeholder,
+select::placeholder {
+    color: #000;
+}
+
+.cpi_in p {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #0836ee;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0524aa;
+}

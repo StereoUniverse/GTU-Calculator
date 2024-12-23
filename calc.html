@@ -1,0 +1,53 @@
+<html lang="en">
+    <head>
+        <meta  charset="'UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GTU Calculator</title>
+        <link rel="stylesheet" href="calc_style.css">
+        <script src="calc_script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <h1>GTU SPI & CPI Calculator</h1>
+                <form id="spi-form">
+                    <h2>Calculate SPI</h2>
+                    <div id="courses">
+                        <div class="course">
+                            <p><label>Credits: <input type="number" class="credits" required></label></p>
+                            <p><label>Grade: 
+                                <select class="grade" required>
+                                    <option value="">Select Grade</option>
+                                    <option value="10">AA</option>
+                                    <option value="9">AB</option>
+                                    <option value="8">BB</option>
+                                    <option value="7">BC</option>
+                                    <option value="6">CC</option>
+                                    <option value="5">CD</option>
+                                    <option value="4">DD</option>
+                                    <option value="0">FF</option>
+                                </select>
+                            </label></p>                    
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <button type="button" id="add-course">Add Course</button>
+                        <button type="submit">Calculate SPI</button>
+                    </div>
+                </form>
+                <p id="spi-result"></p>
+                <p id="spi-percentage"></p>
+                <form id="cpi-form">
+                    <h2>Calculate CPI</h2>
+                    <div class="cpi_in">
+                        <p><label>Total Credits Earned: <input type="number" id="total-credits" required></label></p>
+                        <p><label>Total Grade Points: <input type="number" id="total-grade-points" required></label></p>
+                    </div>
+                    <button type="submit">Calculate CPI</button>
+                </form>
+                <p id="cpi-result"></p>          
+            </div>  
+        </div>
+        
+    </body>
+</html>
